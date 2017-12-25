@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<html manifest="soundboard.appcache">
+        
+
+<head>
+	<title>Soundboard 420.69</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="ur dad's dick">
+	<meta name="description" content="HTML 5 soundboard.">
+	<meta name="keywords" content="HTML5, Mobile, Soundboard, IBM">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+		crossorigin="anonymous">
+	<style>
+		body {
+			margin-left: 20px;
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}
+
+		label {
+			font-weight: normal;
+		}
+
+		table, th, td {
+			border: 1px solid black;
+		}
+
+		td, th {
+			padding: 10px;
+		}
+            .btn { margin: 5px }
+    </style>
+</head>
+<body>
+                  <audio id="pressmebitch" src="audio/PressMeBitch.mp3"></audio>
+	<div class="container">
+		<div class="col-xs-12 col-sm-8">
+            <h2>Soundboard</h2>
+
+            <button class="btn btn-primary btn-lg" onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0;})">Silence</button>
+
+            <button class="btn btn-primary btn-lg" onclick="document.getElementById('stavsoundboard').play()">PressMeBitch</button>
+
+                  <div id="root"></div>
+			<hr>
+		    <footer>
+				<p>your dad's gay.</p>
+		    </footer>
+		</div>
+	</div>
+      <script>
+        window.data = [
+          {
+            name: "Sitie 3 veikia",
+            items: [
+	      { title: "Laba Diena Mokiniai", file: "audio/LabaDienaMokiniai.mp3" },
+              { title: "Prasau Uzeiti", file: "audio/PrasauUzeiti.mp3" },
+              { title: "Butina Dabar", file: "audio/ButinaDabar.mp3" }
+            ]
+          },
+          {
+            name: "Cia tusti",
+            items: [
+              { title: "Prasome", file: "audio/Prasome.mp3" },
+              { title: "Ka Nors Dar", file: "audio/KaNorsDar.mp3" },
+              { title: "Prideti", file: "audio/Prideti.mp3" }
+            ]
+          }
+        ];
+        var audioHTML = '';
+        for (var i = 0; i < window.data.length; i++) {
+          var category = window.data[i];
+          var itemHTML = '<h4>' + category.name + '</h4>';
+          for (var itemCount = 0; itemCount < category.items.length; itemCount++) {
+            var item = category.items[itemCount];
+            var title = item.title;
+            var file = item.file;
+            itemHTML += '<audio id="#file" src="#file"></audio><button class="btn btn-primary btn-lg"  onclick="document.getElementById(\'#file\').play()">#title</button>'
+              .replace(/#file/g, file)
+              .replace(/#title/g, title);
+          }
+          document.getElementById('root').innerHTML += itemHTML;
+        }
+
+      </script>
+</body>
+</html>
