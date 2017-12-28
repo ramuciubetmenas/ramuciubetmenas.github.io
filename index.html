@@ -1,4 +1,5 @@
 ﻿
+
 <!DOCTYPE html>
 <html lang="en-US">
 <html manifest="soundboard.appcache">
@@ -36,14 +37,14 @@
     </style>
 </head>
 <body>
-                  <audio id="BasedAssad" src="audio/BasedAssad.mp3"></audio>
+                  <audio id="Ebola" src="audio/ebola.mp3"></audio>
 	<div class="container">
 		<div class="col-xs-12 col-sm-8">
             <h2>Soundboard</h2>
 
             <button class="btn btn-primary btn-lg" onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0;})">Silence</button>
 
-            <button class="btn btn-primary btn-lg" onclick="document.getElementById('BasedAssad').play()">BasedAssad</button>
+            <button class="btn btn-primary btn-lg" onclick="document.getElementById('Ebola').play()">Ebola</button>
 
                   <div id="root"></div>
 			<hr>
@@ -63,13 +64,46 @@
             ]
           },
           {
-            name: " 👌👌💯🍆💦😩💕💕😩💦🍆💯👌👌 ",
+            name: " 👌💯🍆💦😩💕💕😩💦🍆💯👌 ",
             items: [
               { title: "Koks Saltas", file: "audio/KoksSaltas.mp3" },
               { title: "Uuuu Mazute", file: "audio/Uuuu.mp3" },
               { title: "Va Taip Moteris Turi", file: "audio/Vataip.mp3" },
               { title: "Marsas Venera", file: "audio/Marsas.mp3" },
               { title: "Joptvaimat", file: "audio/Job.mp3" }
+            ]
+          },
+          {
+            name: " Ekspertas Apie Counter Strike ",
+            items: [           
+              { title: "Patenkinti Savo Ego", file: "audio/ego.mp3" },
+              { title: "Nepatinka Tai Tu Nezaisk", file: "audio/nepatinka.mp3" },
+              { title: "Neisvystytas Skonis", file: "audio/skonis.mp3" },
+              { title: "Tik Grafikas Pakeite", file: "audio/nepakeite.mp3" },
+              { title: "Pridejo Skinus", file: "audio/pridejo.mp3" },              
+              { title: "Neidomu Zaist", file: "audio/neidomu.mp3" },
+              { title: "Dreba Taikiklis", file: "audio/dreba.mp3" },
+              { title: "Quickscope", file: "audio/quickscope.mp3" } 
+            ]
+          },
+          {
+            name: "Ekspertas 2 ",
+            items: [
+              { title: "Geresnis Uz Runescape", file: "audio/runescape.mp3" },
+              { title: "Nera XP Aciu Dievui", file: "audio/xp.mp3" },
+              { title: "Pasirenkat Characteri", file: "audio/characteri.mp3" },
+              { title: "Hitscanai", file: "audio/hitscan.mp3" }
+            ]
+          },
+          {
+            name: "Ekspertas 3 ",
+            items: [
+              { title: "Be Garnyro", file: "audio/begarnyro.mp3" },
+              { title: "Nereikia Jokio Expo", file: "audio/expo.mp3" },
+              { title: "Kids Kategorija", file: "audio/kids.mp3" },
+              { title: "League of Legends", file: "audio/leadz.mp3" },
+              { title: "Ar Verta Kelti Leveli", file: "audio/level.mp3" },
+              { title: "Kas yra Runescape", file: "audio/zaidimas.mp3" }         
             ]
           }
         ];
