@@ -33,7 +33,15 @@
 		td, th {
 			padding: 10px;
 		}
-            .btn { margin: 5px }
+             .btn { margin: 5px ;
+		   background: none;
+		   padding: 12px 22px;
+	           border: 3px solid #37393a;
+	           color: #37393a;
+                   font-weight: 700;
+    		   letter-spacing: 1px;
+   		   text-transform: uppercase;
+		   border-radius:0 }
     </style>
 </head>
 <body>
@@ -42,9 +50,9 @@
 		<div class="col-xs-12 col-sm-8">
             <h2>Soundboard</h2>
 
-            <button class="btn btn-primary btn-lg" onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0;})">Silence</button>
+            <button class="btn btn-danger btn-lg" onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0;})">Silence</button>
 
-            <button class="btn btn-primary btn-lg" onclick="document.getElementById('Ebola').play()">Ebola</button>
+            <button class="btn btn-danger btn-lg" onclick="document.getElementById('Ebola').play()">Ebola</button>
 
                   <div id="root"></div>
 			<hr>
@@ -67,7 +75,6 @@
           {
             name: " Ekspertas Apie Counter Strike ",
             items: [           
-              { title: "Patenkinti Savo Ego", file: "audio/ego.mp3" },
               { title: "Nepatinka Tai Tu Nezaisk", file: "audio/nepatinka.mp3" },
               { title: "Neisvystytas Skonis", file: "audio/skonis.mp3" },
               { title: "Tik Grafikas Pakeite", file: "audio/nepakeite.mp3" },
